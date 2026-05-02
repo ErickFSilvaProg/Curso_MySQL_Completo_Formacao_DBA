@@ -1,0 +1,8 @@
+DOWNLOAD do MySQL Community 
+
+Link para download do  MySQL Community
+https://dev.mysql.com/downloads/installer/
+
+---------------------------------------------------------------------------------------------------------------
+
+
