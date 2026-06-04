@@ -1,0 +1,21 @@
+
+/*==================================================================================
+Curso: MYSQL e outros cursos
+http://sandroservino.com.br/
+
+Instrutor: Sandro Servino
+https://www.linkedin.com/in/sandroservino/?originalSubdomain=pt
+
+==================================================================================*/
+
+CREATE DATABASE clientes
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_0900_ai_ci;  
+
+
+ALTER SCHEMA clientes  
+DEFAULT CHARACTER SET utf8mb4 
+DEFAULT COLLATE utf8mb4_vi_0900_as_cs ;
+
+
+SHOW CHARACTER SET;

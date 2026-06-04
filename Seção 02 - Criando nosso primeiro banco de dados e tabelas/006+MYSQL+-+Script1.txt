@@ -1,0 +1,16 @@
+
+/*==================================================================================
+Curso: MYSQL e outros cursos
+https://www.udemy.com/courses/search/?src=ukw&q=SANDRO+SERVINO
+
+Instrutor: Sandro Servino
+https://www.linkedin.com/in/sandroservino/?originalSubdomain=pt
+
+==================================================================================*/
+
+CREATE TABLE editora (
+  ideditora INT NOT NULL AUTO_INCREMENT,
+  nomeeditora VARCHAR(45) NULL,
+  PRIMARY KEY (ideditora));
+  
+  drop table editora;
