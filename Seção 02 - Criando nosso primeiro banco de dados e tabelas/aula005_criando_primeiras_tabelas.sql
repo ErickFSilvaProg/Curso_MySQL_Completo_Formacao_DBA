@@ -1,17 +1,27 @@
 /*
-	Criando tabelas
+	Criar banco de dados
 */
+
+-- Cria o banco livraria:
+create database livraria;
 
 -- Selecione o banco livraria:
 use livraria;
 
+
+/*
+	Criar tabelas
+*/
 
 -- Criar a tabela autor:
 create table if not exists autor (
 	id int not null,
     nome varchar(30) not null,
     sobrenome varchar(45) not null
-);
+)
+character set utf8mb4
+collate utf8mb4_0900_ai_ci
+engine = innodb;
 
 alter table autor
 add constraint pk_autor
@@ -25,7 +35,10 @@ modify column id int auto_increment;
 create table if not exists editora (
 	id int not null,
     nome varchar(45) not null
-);
+)
+character set utf8mb4
+collate utf8mb4_0900_ai_ci
+engine = innodb;
 
 alter table editora
 add constraint pk_editora
@@ -41,7 +54,10 @@ create table if not exists livro (
     nome varchar(40) not null,
     id_editora int not null,
     id_autor int not null
-);
+)
+character set utf8mb4
+collate utf8mb4_0900_ai_ci
+engine = innodb;
 
 alter table livro
 add constraint pk_livro
@@ -64,16 +80,22 @@ on delete restrict;
 
 
 /*
-	Excluindo tabelas
+	Excluir tabelas
 */
 
 -- Excluir a tabela autor:
 drop table autor;
 
-
 -- Exluir tabela editora:
 drop table editora;
 
-
 -- Exluir tabela livro:
 drop table livro;
+
+
+/*
+	Excluir banco de dados
+*/
+
+-- Excluir o banco de dados livraria
+drop database livraria;

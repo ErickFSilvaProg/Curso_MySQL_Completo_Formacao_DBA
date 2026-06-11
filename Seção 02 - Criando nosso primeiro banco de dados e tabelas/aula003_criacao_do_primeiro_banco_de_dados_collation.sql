@@ -21,6 +21,11 @@ character set utf8mb4
 collate utf8mb4_0900_ai_ci;
 
 
+-- Comado para visualizar a instrução que criou o banco de dados:
+show databases;
+show create database `nome_do_banco`;
+
+
 -- Cria o banco livraria:
 create database livraria
 character set utf8mb4
